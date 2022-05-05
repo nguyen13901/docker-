@@ -1,0 +1,25 @@
+docker images: show images is existing 
+docker search name image: find the image on marker or search on hub.docker
+docker pull image: get the image into your docker
+docker image rm name_image + Tag or rm id_image: delete image
+
+============
+create container 
+docker run (parameter: -i, -t, ...) name_Image + tag or id_image
+
+docker ps: show containers are running
+docker ps -a: show all containers  
+exit: exit the container when we are in the container 
+docker start id_docker: run docker 
+docker rm id_container: delete the container
+docker stop id_container: stop the container that is running when we out site the container
+docker attach id_container: access into the container when we out site the container
+
+===============
+docker exec id_container (command: this is any command in the container. Ex: ls in the ubuntu): run command but not access into the container
+docker commit name or id_container name_image:tag_image: convert container to image
+
+========
+docker save --output filename.tar name or id_image: save image to file.tar
+docker load -i filename.tar: load file.tar to image 
+docker tag id_image name_image:tag_image : create name , tag for the image
